@@ -1,0 +1,15 @@
+Package: giosAPI
+Type: Package
+Title: Interface to GIOS API
+Version: 0.1.0
+Author: Piotr Sobczyk
+Maintainer: Piotr Sobczyk <pj.sobczyk@gmail.com>
+Description: A set of tools that provide access to the GIOS air quality data API.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.2.0)
+Imports:
+    httr
+RoxygenNote: 6.0.1
