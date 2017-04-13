@@ -4,6 +4,14 @@
 #'
 #' @return data.frame last 24h data
 #'
+#' @examples
+#' \dontrun{
+#' stations <- get_stations()
+#' subset(stations, city.name == "Wrocław")
+#' get_sensors(129)
+#' get_measurment_data(744)
+#' }
+#'
 #' @export
 get_measurment_data <- function(sensorId){
 

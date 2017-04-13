@@ -15,3 +15,11 @@ data.frame all sensors available for a given station
 \description{
 Retrieve list of available sensors for given station from GIOS API
 }
+\examples{
+\dontrun{
+stations <- get_stations()
+subset(stations, city.name == "Wrocław")
+get_sensors(129)
+}
+
+}

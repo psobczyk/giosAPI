@@ -15,3 +15,11 @@ data.frame air quality
 \description{
 Retrieve air quality index for a given stations from GIOS API
 }
+\examples{
+\dontrun{
+stations <- get_stations()
+subset(stations, city.name == "Wrocław")
+get_aq_index(129)
+}
+
+}

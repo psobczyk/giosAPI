@@ -4,6 +4,13 @@
 #'
 #' @return data.frame all sensors available for a given station
 #'
+#' @examples
+#' \dontrun{
+#' stations <- get_stations()
+#' subset(stations, city.name == "Wrocław")
+#' get_sensors(129)
+#' }
+#'
 #' @export
 get_sensors <- function(stationId){
 

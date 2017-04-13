@@ -4,6 +4,13 @@
 #'
 #' @return data.frame air quality
 #'
+#' @examples
+#' \dontrun{
+#' stations <- get_stations()
+#' subset(stations, city.name == "Wrocław")
+#' get_aq_index(129)
+#' }
+#'
 #' @export
 get_aq_index <- function(stationId){
 

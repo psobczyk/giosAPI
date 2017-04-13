@@ -15,3 +15,12 @@ data.frame last 24h data
 \description{
 Retrieve measurment data for a given sensor from GIOS API
 }
+\examples{
+\dontrun{
+stations <- get_stations()
+subset(stations, city.name == "Wrocław")
+get_sensors(129)
+get_measurment_data(744)
+}
+
+}

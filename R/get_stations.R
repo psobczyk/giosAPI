@@ -1,5 +1,11 @@
 #' Retrieve list of available stations from GIOS API
 #'
+#' @examples
+#' \dontrun{
+#' stations <- get_stations()
+#' subset(stations, city.name == "Wrocław")
+#' }
+#'
 #' @export
 get_stations <- function(){
   request <- GET(url = "http://api.gios.gov.pl/pjp-api/rest/station/findAll")

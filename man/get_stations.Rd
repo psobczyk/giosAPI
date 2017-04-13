@@ -9,3 +9,10 @@ get_stations()
 \description{
 Retrieve list of available stations from GIOS API
 }
+\examples{
+\dontrun{
+stations <- get_stations()
+subset(stations, city.name == "Wrocław")
+}
+
+}
