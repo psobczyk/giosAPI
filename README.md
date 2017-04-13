@@ -1,5 +1,10 @@
+[![Build Status](https://api.travis-ci.org/psobczyk/giosAPI.png)](https://travis-ci.org/psobczyk/giosAPI)
 
-## A set of tools that provide access to the GIOS air quality data API.
+-------------
+
+# README #
+
+## A set of tools that provide access to the GIOS air quality data API
 
 The following functions are implemented:
 
