@@ -27,6 +27,9 @@ get_measurment_data <- function(sensorId){
     x$value <- ifelse(is.null(x$value), NA, x$value)
     x
   })
+  if(length(measurement) == 0) { #if there is no air quality data
+  	measurement[[1]] <- list(date = NA, value = NA)
+  }
   measurement <- do.call(rbind.data.frame, measurement)
   measurement$key <- key
   measurement$sensorId <- sensorId
