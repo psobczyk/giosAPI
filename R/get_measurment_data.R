@@ -29,6 +29,7 @@ get_measurment_data <- function(sensorId){
   })
   measurement <- do.call(rbind.data.frame, measurement)
   measurement$key <- key
+  measurement$sensorId <- sensorId
 
   return(measurement)
 }
